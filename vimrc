@@ -9,6 +9,7 @@ set shiftwidth=4
 set nocompatible
 set ruler
 set showcmd
+set wildmenu
 packadd! matchit
 
 filetype plugin indent on
