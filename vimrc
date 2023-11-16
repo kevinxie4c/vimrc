@@ -3,7 +3,7 @@ set nu
 set hlsearch
 set bg=dark
 set cindent
-set noexpandtab
+set expandtab
 set softtabstop=4
 set shiftwidth=4
 set nocompatible
@@ -32,6 +32,9 @@ Plug 'kana/vim-textobj-syntax'
 Plug 'kana/vim-textobj-function', { 'for':['c', 'cpp', 'vim', 'java'] }
 Plug 'sgur/vim-textobj-parameter'
 Plug 'mileszs/ack.vim'
+Plug 'bling/vim-airline'
+Plug 'majutsushi/tagbar'
+"Plug 'osfameron/perl-tags-vim'
 " List ends here. Plugins become visible to Vim after this call.
 call plug#end()
 
@@ -69,3 +72,6 @@ let g:ale_c_gcc_options = '-Wall -O2 -std=c99'
 let g:ale_cpp_gcc_options = '-Wall -O2 -std=c++14'
 let g:ale_c_cppcheck_options = ''
 let g:ale_cpp_cppcheck_options = ''
+
+let g:airline#extensions#tagbar#flags = 'f'  " show full tag hierarchy
+let g:airline#extensions#whitespace#enabled = 0 " disable white space warnings
